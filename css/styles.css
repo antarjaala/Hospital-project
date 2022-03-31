@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+    box-sizing: border-box;
+}
+
+*, ::before,::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    
+    line-height: 2;
+}
+
+a{
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+a:hover{
+    color: #333C4A;
+}
+
+span{
+    color: #59E2F3;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+/*hero section */
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.hero-content{
+    position: relative;
+    top: 100px;
+    color: #333C4A;
+}
+.hero-content h1{
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+/* navigation section */
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+nav.stickyadd{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+    border-bottom: 0.5px solid rgb(163, 159, 159);
+}
+nav.stickyadd .nav-item .nav-link{
+    color: rgba(0,0,0,0.7);
+}
+nav.stickyadd .navbar-brand{
+    color: rgba(0,0,0,0.7);
+}
+nav.stick{
+    transition: all 0.5ss;
+}
+.navbar-brand h2{
+    color: #333C4A;
+    margin: 0;
+}
+
+/*about section*/
+.about-class{
+    padding-top: 5rem;
+    margin: 1.5rem 0;
+    color: #333C4A;
+}
+
+.about-class p{
+    color: rgb(37, 36, 36);
+}
+
+.about-class h1{
+    text-align: center;
+    padding: 2rem 0;
+}
+.img-fluid{
+    height: 40%;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/*doctor section */
+.doctor-section{
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.doctor-section .row {
+    margin: 0 3.5rem;
+}
+
+.doctor-section h1{
+    color: #333C4A;
+    text-align: center;
+    padding: 2rem 0;
+}
+.doctor-section img{
+    width: 160px;
+    text-align: center;
+    padding: 1.3rem 0;
+    margin: auto;
+}
+.doctor-section .card{
+    color: whitesmoke;
+    width: 18rem;
+    border-radius: 1%;
+    text-align: center;
+    background-color: #333C4A;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+
+.facility {
+    background-color: #333C4A;
+    color: whitesmoke;
+    margin: auto;
+    padding: 2rem 0.5rem;
+}
+
+.facility h1 {
+    padding: 2rem 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.facility i {
+    color: #59E2F3;
+    font-size: 2.2rem;
+    height: auto;
+    padding-right: 10px;
+}
+
+.facility-left,
+.facility-right{
+    padding: 1.5rem 0;
+}
+
+
+.gallery{
+    margin: auto;
+    padding: 2rem 0.5rem;
+}
+
+.gallery .row{
+    margin: 0 3.5rem;
+}
+
+.gallery .row .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.gallery .row .box img:hover{
+    transform: scale(1.05);
+}
+
+.gallery .row .box {
+    padding: 0.5rem 0.5rem;
+    height: 16rem;
+}
+
+.gallery h1{
+    padding: 2rem 0;
+    text-align: center;
+    color: #333C4A;
+}
+
+#testimonials {
+    text-align: center;
+    background-color: #333C4A;
+    color: whitesmoke;
+    padding: 4rem 0;
+}
+
+#testimonials h2 {
+    padding-bottom: 4%;
+}
+
+#testimonials p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial-image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.contact-section {
+    color: #333C4A;
+    margin: auto;
+    padding: 2rem 0.5rem;
+}
+
+.contact-section i{
+    font-size: 1.5rem;
+    height: auto;
+    padding-right: 10px;
+}
+
+.contact-left{
+    margin: 2rem 0;
+}
+
+.contact-section .contact-left p {
+    margin: auto;
+    padding: 0.5rem 0;
+}
+
+.contact-last {
+    padding-top: 1.5rem;
+    
+}
+
+.contact-left a {
+    color: #333C4A;
+    padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    .hero{
+        height: 120vh;
+    }
+    .about-class{
+        text-align: center;
+    }
+    .facility{
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        position: relative;
+        background-color: #333C4A;
+        margin-bottom: 1.5rem;
+    }
+    .navbar-brand h2{
+        color: whitesmoke;
+    }
+    nav.stickyadd{
+        background-color: #333C4A;
+        transition: all 0.5s;
+    }
+    a:hover{
+        color: whitesmoke;
+    }
+    nav.stickyadd .nav-item .nav-link{
+        color: whitesmoke;
+    }
+}
+
+
+
+
+
+
+
